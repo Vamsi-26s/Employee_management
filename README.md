@@ -320,16 +320,63 @@ Optional per-employee export
 
 Download in .csv format
 
-👤 7️⃣ Manager Profile & Settings
+9️⃣ Dark Mode & Light Mode Support (Theme Toggle)
 
-📌 (Screenshot placeholder — profile-page.png)
+📌 
+🌓 Overview
 
-Purpose:
-Allows managers to update personal information and preferences.
-Add in README as:
+The application includes a fully responsive Dark Mode and Light Mode theme system to enhance accessibility, usability, and user comfort. Users can switch themes instantly, and the system remembers their preference across sessions.
 
-![Employee Dashboard](docs/screenshots/employee-dashboard.png)
+This feature improves the overall user experience, especially for long working hours, low-light environments, and users with visual sensitivity.
 
+🎨 How Theme Switching Works
+
+The theme is implemented using:
+
+TailwindCSS Theme Classes
+
+LocalStorage Persistence
+
+Global Redux/Zustand UI State
+
+Dynamic Component Styling with DaisyUI (if used)
+
+When a user toggles the theme:
+
+UI theme state updates globally
+
+Preference is stored in local storage:
+
+theme = "dark" | "light"
+
+
+On next login or page reload, the system automatically restores the saved theme
+
+🧠 Benefits for Users
+
+✔ Improved readability in different environments
+✔ Reduced eye strain in dark mode
+✔ Consistent UI theme across all app pages
+✔ Personalization aligned with modern SaaS standards
+
+🛠️ Technical Implementation Summary
+Feature Layer	Implementation
+State Management	Redux Toolkit / Zustand stores user theme mode
+UI Framework	TailwindCSS theme toggle classes
+Persistence	Stored in localStorage for durability
+Accessibility Support	High contrast mode ensured for icons & text
+React Optimization	No full re-render, efficient class-level switch
+
+Example logic stored:
+
+localStorage.setItem("theme", selectedTheme);
+document.documentElement.setAttribute("data-theme", selectedTheme);
+
+🔐 Role Support
+Role	Theme Support
+Employee	✓ Full
+Manager	✓ Full
+Guest/Visitor	✓ (If public login screen enabled)
 🧪 Testing & QA
 
 ✔ Unit tested API routes using Postman
