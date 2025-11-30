@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card { @apply bg-surface shadow-soft rounded-lg border border-gray-200 dark:bg-surface-dark dark:border-gray-700 transition-all duration-200 hover:shadow-md hover:border-gray-300 dark:hover:border-gray-600; }
+.btn { @apply inline-flex items-center gap-2 px-4 py-2 rounded-md font-medium transition-all duration-200; }
+.btn-primary { @apply btn bg-brandAmber text-black hover:bg-brandAmber-dark dark:bg-brandAmber dark:text-black hover:-translate-y-[1px] active:translate-y-0; }
+.btn-secondary { @apply btn bg-brandBlue text-white hover:bg-brandBlue-dark hover:-translate-y-[1px] active:translate-y-0; }
+.btn-ghost { @apply btn bg-transparent text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800; }
+.input { @apply w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-100; }
+.label { @apply block text-sm font-medium text-gray-700 mb-1 dark:text-gray-100; }
+
+/* Header styles */
+.header { @apply bg-white/90 backdrop-blur border-b border-gray-200 dark:bg-gray-900/80 dark:border-gray-800; }
+.brand-title { @apply text-xl font-bold text-brandBlue dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-white dark:to-gray-300; }
+.brand-sub { @apply text-xs text-gray-500 dark:text-gray-300; }
+
+/* Gradient text utilities */
+.text-gradient { @apply text-transparent bg-clip-text bg-gradient-to-r from-brandBlue to-brandAmber; }
+.text-gradient-white { @apply text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300; }
+.heading { @apply text-2xl font-semibold; }
+.dark .heading { @apply text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300; }
+
+/* Subtle focus and hover effects */
+.nav-link { @apply btn-ghost hover:text-brandBlue dark:hover:text-white; }
+.nav-link-icon { @apply text-base opacity-80; }
+
+/* Dark mode overrides */
+.dark .btn-ghost { @apply text-gray-100; }
+
+/* Utility badges */
+.badge { @apply inline-block px-2 py-1 text-xs rounded border; }
+.badge-present { @apply badge bg-green-100 text-green-700 border-green-200 dark:bg-green-900 dark:text-green-200 dark:border-green-800; }
+.badge-late { @apply badge bg-yellow-100 text-yellow-700 border-yellow-200 dark:bg-yellow-900 dark:text-yellow-200 dark:border-yellow-800; }
+.badge-half { @apply badge bg-orange-100 text-orange-700 border-orange-200 dark:bg-orange-900 dark:text-orange-200 dark:border-orange-800; }
+.badge-absent { @apply badge bg-red-100 text-red-700 border-red-200 dark:bg-red-900 dark:text-red-200 dark:border-red-800; }
