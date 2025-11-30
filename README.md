@@ -322,7 +322,9 @@ Download in .csv format
 
 9️⃣ Dark Mode & Light Mode Support (Theme Toggle)
 
-📌 
+📌 <img width="1568" height="900" alt="Image" src="https://github.com/user-attachments/assets/a2eee86e-30f6-4adc-9087-453c09b6c32e" />
+
+  <img width="1533" height="711" alt="Image" src="https://github.com/user-attachments/assets/3fa34d27-1ffe-4191-b62e-6bb9de65eeb8" />
 🌓 Overview
 
 The application includes a fully responsive Dark Mode and Light Mode theme system to enhance accessibility, usability, and user comfort. Users can switch themes instantly, and the system remembers their preference across sessions.
