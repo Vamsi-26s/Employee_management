@@ -403,10 +403,13 @@ Geo-restriction check-in (GPS)
 👤 Author
 Field	Value
 Name	Siripalli Vamsi Kesava
+
 Degree	B.Tech CSE
+
 Role	Developer — Full Stack
+
 GitHub	https://github.com/Vamsi-26s
 
-Email	vamsikesavasiripalli@gmail.com
+Email	:naiduvamshi@263.com
 
 Hosted Link	Render (Frontend + Backend + Atlas)
