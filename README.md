@@ -405,7 +405,9 @@ Field	Value
 Name	Siripalli Vamsi Kesava
 
 Degree	B.Tech CSE
+
 College Name: Moham Babu University
+
 Phn no: 9177937648
 
 Role	Developer — Full Stack
