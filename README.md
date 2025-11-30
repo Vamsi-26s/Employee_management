@@ -256,9 +256,9 @@ Filters by department, employee name, and status
 
 🗓️  Team Attendance Calendar (Manager View)
 
-📌 <img width="1876" height="994" alt="Image" src="https://github.com/user-attachments/assets/14b25b76-51c8-426c-ac79-50f50e5845e2" />
+📌<img width="1876" height="994" alt="Image" src="https://github.com/user-attachments/assets/2a7e0df0-6ea9-4143-9464-ca6002097866" />
 
-<img width="1574" height="933" alt="Image" src="https://github.com/user-attachments/assets/b35b89fe-a32d-4b49-81af-d1f2a9e51277" />
+
 
 🔍 Overview
 
@@ -307,7 +307,7 @@ Manager/Admin	✅ Full access
 
 📄 6️⃣ CSV Export Page
 
-📌 (Screenshot placeholder — export-page.png)
+📌 <img width="1574" height="933" alt="Image" src="https://github.com/user-attachments/assets/b35b89fe-a32d-4b49-81af-d1f2a9e51277" />
 
 Purpose:
 Allows managers to export attendance records for payroll, compliance, or audits.
