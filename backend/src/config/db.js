@@ -1,21 +1,18 @@
 import mongoose from 'mongoose';
-import { MongoMemoryServer } from 'mongodb-memory-server';
-
-let memoryServer; // for dev fallback
 
 const connectDB = async () => {
-  const uri = process.env.MONGO_URI || 'mongodb://localhost:27017/attendance_dev';
-  const opts = { useNewUrlParser: true, useUnifiedTopology: true };
+  const isProd = process.env.NODE_ENV === 'production';
+  const uri = process.env.MONGO_URI || (isProd ? '' : 'mongodb://localhost:27017/attendance_dev');
+  if (!uri) {
+    console.error('No Mongo URI found. Set MONGO_URI in environment.');
+    process.exit(1);
+  }
   try {
-    await mongoose.connect(uri, opts);
+    await mongoose.connect(uri, { serverSelectionTimeoutMS: 10000 });
     console.log('MongoDB Connected');
   } catch (err) {
-    console.error('Primary DB connection failed:', err.message);
-    console.log('Starting in-memory MongoDB for development...');
-    memoryServer = await MongoMemoryServer.create();
-    const memUri = memoryServer.getUri('attendance_dev');
-    await mongoose.connect(memUri, opts);
-    console.log('In-memory MongoDB Connected');
+    console.error('MongoDB connection failed:', err.message);
+    process.exit(1);
   }
 };
 
