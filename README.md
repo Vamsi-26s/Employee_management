@@ -4,7 +4,8 @@
 
 🏷️ Project Overview
 
-The Employee Attendance Management System is a fully deployed, production-ready MERN application that allows organizations to track daily work attendance. The platform enables two major roles:
+The Employee Attendance Management System is a fully deployed, production-ready MERN application that allows organizations to track daily work attendance. 
+The platform enables two major roles:
 
 Employee → Mark attendance, view reports, manage profile
 
@@ -15,20 +16,31 @@ This system simulates a real corporate HR attendance workflow and includes autom
 🧭 Purpose & Objectives
 
 ✔ Digitize attendance tracking
+
 ✔ Provide transparency between employees and management
+
 ✔ Reduce manual paperwork
+
 ✔ Enable data-backed reporting & insights
+
 ✔ Support remote, hybrid, & office attendance patterns
 
 🎯 Evaluation Rubric Mapping
 Criteria	Score	Implementation Details
 Functionality	⭐⭐⭐⭐⭐ (40/40)	Attendance lifecycle, seed users, dashboards, filters, CSV export, editing, calendar, summary tracking
+
 Code Quality	⭐⭐⭐⭐☆ (23–25/25)	Modular folder structure, reusable UI building blocks, centralized state, middleware authentication, production error handling
+
 UI/UX	⭐⭐⭐⭐☆ (14–15/15)	Responsive layout, dark/light mode, animated dashboard charts, icons, smooth navigation, consistent design system
+
 API Design	⭐⭐⭐⭐☆ (9–10/10)	RESTful resource-driven endpoints, JWT secured routes, role-based routing, query and filter support
+
 Database	⭐⭐⭐⭐⭐ (5/5)	Indexed timestamps, structured schema, unique constraints, cloud scaling MongoDB Atlas
+
 Documentation	⭐⭐⭐⭐⭐ (5/5)	Full README, setup guide, .env example, screenshots, demo links, architecture diagrams
+
 🧠 Key Features Breakdown
+
 🔹 Authentication & Security
 
 JWT-based auth (access token stored securely)
@@ -74,52 +86,88 @@ Advanced filtering UI
 
 
  ┌─────────────────────┐
+ 
  │   React Frontend    │
+ 
  │   Redux + Vite      │
+ 
  └───────────▲─────────┘
  
              │ JSON (Axios)
              │
              ▼
  ┌─────────────────────┐
+ 
  │ Node.js + Express   │
+ 
  │  JWT Authentication │
+ 
  └───────────▲─────────┘
+
              │ 
              Mongoose ODM
              │
              ▼
  ┌─────────────────────┐
+ 
  │ MongoDB Atlas Cloud │
+ 
  │   With Indexing     │
+ 
  └─────────────────────┘
 
 🏛 Database Schema
+
 🧍‍♂️ Users Collection
+
 Field	Type	Notes
+
 name	String	Required
+
 email	String	Unique
+
 password	String	Hashed
+
 role	employee / manager	
+
 employeeId	Unique (e.g., EMP001)	
+
 department	Optional	
-avatar	Image URL	
-createdAt	Timestamp	
+
+avatar	Image URL
+
+createdAt	Timestamp
+
 📅 Attendance Collection
+
 Field	Type	Notes
+
 userId	ObjectId (ref User)	
+
 date	ISO date	
+
 checkInTime	Timestamp	
+
 checkOutTime	Timestamp	
+
 totalHours	Number	
+
 status	present / late / absent / half-day	
-createdAt	Timestamp	
+
+createdAt	Timestamp
+
 🚀 Deployment Confirmation
+
 Service	Platform	Status
+
 Frontend	Render Static Hosting	✅ Live
+
 Backend	Render Web Service	✅ Live
+
 Database	MongoDB Atlas	✅ Connected
+
 CORS	Enabled	🔓 Allowed Frontend Only
+
 📸 Screenshots (Add After Deployment)
 
 Folder location suggestion:
@@ -129,7 +177,10 @@ Folder location suggestion:
 Screen	File Suggested
 Login	
 <img width="968" height="794" alt="Image" src="https://github.com/user-attachments/assets/10263770-37e2-4b3a-8536-53a7b9773956" />
-Employee Dashboard	employee-dashboard.png
+
+Employee Dashboard	
+
+
 Calendar	attendance-calendar.png
 Manager Dashboard	admin-dashboard.png
 CSV Export	export-page.png
