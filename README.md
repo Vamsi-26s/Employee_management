@@ -179,9 +179,10 @@ Login
 <img width="968" height="794" alt="Image" src="https://github.com/user-attachments/assets/10263770-37e2-4b3a-8536-53a7b9773956" />
 
 Employee Dashboard	
+<img width="1884" height="980" alt="Image" src="https://github.com/user-attachments/assets/dcb2e9dc-d699-4a53-93bc-62847316f984" />
 
+Employer Attendance
 
-Calendar	attendance-calendar.png
 Manager Dashboard	admin-dashboard.png
 CSV Export	export-page.png
 Profile	profile-page.png
