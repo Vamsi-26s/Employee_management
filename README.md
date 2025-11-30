@@ -237,7 +237,7 @@ Toggle dark/light mode preferences
 
 👑 5️⃣ Manager Dashboard
 
-📌 <img width="1563" height="959" alt="Image" src="https://github.com/user-attachments/assets/8e0f864a-c448-4a1b-8bc9-6b94edf6b958" />
+📌 <img width="1886" height="971" alt="Image" src="https://github.com/user-attachments/assets/7bedbdf2-d551-49ba-a65f-e50d8861fd7f" />
 
 Purpose:
 Central hub for organization-wide attendance monitoring and analytics.
