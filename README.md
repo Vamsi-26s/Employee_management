@@ -225,7 +225,7 @@ Status	Color	Meaning
 🟧 Orange	Half-Day	Worked below time threshold
 🧑‍💻 4️⃣ Employee Profile
 
-📌 
+📌 <img width="1232" height="881" alt="Image" src="https://github.com/user-attachments/assets/96d6eaac-a97e-4c5b-a986-879dcf1029fd" />
 
 Features:
 
@@ -237,7 +237,7 @@ Toggle dark/light mode preferences
 
 👑 5️⃣ Manager Dashboard
 
-📌 (Screenshot placeholder — admin-dashboard.png)
+📌 <img width="1913" height="1131" alt="Image" src="https://github.com/user-attachments/assets/ca77c765-1411-4922-b31f-4df43961cc46" />
 
 Purpose:
 Central hub for organization-wide attendance monitoring and analytics.
