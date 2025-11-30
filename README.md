@@ -237,7 +237,7 @@ Toggle dark/light mode preferences
 
 👑 5️⃣ Manager Dashboard
 
-📌<img width="1876" height="994" alt="Image" src="https://github.com/user-attachments/assets/14b25b76-51c8-426c-ac79-50f50e5845e2" />
+📌
 
 Purpose:
 Central hub for organization-wide attendance monitoring and analytics.
@@ -253,6 +253,55 @@ Late arrival summaries
 Attendance trend graph
 
 Filters by department, employee name, and status
+
+🗓️  Team Attendance Calendar (Manager View)
+
+📌 <img width="1876" height="994" alt="Image" src="https://github.com/user-attachments/assets/14b25b76-51c8-426c-ac79-50f50e5845e2" />
+
+🔍 Overview
+
+The Team Calendar View provides managers with a bird’s-eye visualization of attendance patterns across the entire organization. Instead of viewing records one employee at a time, managers can instantly understand daily team presence, absences, trends, and anomalies.
+
+This feature is especially useful for:
+
+HR executives
+
+Workforce analysts
+
+Team leads managing multiple employees
+
+Payroll verification and compliance teams
+
+🧩 Key Functions & User Experience
+Feature	Description
+📆 Full Monthly Calendar	Displays all attendance records for every employee on a single screen
+🎨 Color-coded Status Indicators	Helps visually identify employee state instantly
+👤 Tooltip Hover Profiles	Shows employee name, timestamps, and attendance summary
+🔍 Filter Controls	Filter by employee, department, status, or date range
+🔄 Real-time Updates	Attendance status updates instantly after check-in/out
+📁 Export Support	Data displayed can be exported from Reports section
+🎨 Color Codes Used (Consistent Across System)
+Color	Meaning
+🟢 Green	Present
+🔴 Red	Absent
+🟡 Yellow	Late
+🟧 Orange	Half-Day
+⚪ Gray	Future / No Data
+
+This ensures managers can understand the calendar at a glance without reading labels.
+
+📈 Benefits
+
+✔ Quickly identify absenteeism patterns
+✔ Detect punctuality and late arrival trends
+✔ Supports shift planning, HR operations, and payroll verification
+✔ Reduces manual checking of individual employee logs
+✔ Improves managerial decision-making using visual insights
+
+🔐 Role Access
+Role	Access
+Employee	❌ Cannot access
+Manager/Admin	✅ Full access
 
 📄 6️⃣ CSV Export Page
 
