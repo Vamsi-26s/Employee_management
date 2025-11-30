@@ -70,10 +70,14 @@ Bulk absent marking
 Advanced filtering UI
 
 🏗️ System Architecture Diagram
+
+
+
  ┌─────────────────────┐
  │   React Frontend    │
  │   Redux + Vite      │
  └───────────▲─────────┘
+ 
              │ JSON (Axios)
              │
              ▼
@@ -81,7 +85,8 @@ Advanced filtering UI
  │ Node.js + Express   │
  │  JWT Authentication │
  └───────────▲─────────┘
-             │ Mongoose ODM
+             │ 
+             Mongoose ODM
              │
              ▼
  ┌─────────────────────┐
@@ -123,6 +128,7 @@ Folder location suggestion:
 
 Screen	File Suggested
 Login	
+<img width="968" height="794" alt="Image" src="https://github.com/user-attachments/assets/10263770-37e2-4b3a-8536-53a7b9773956" />
 Employee Dashboard	employee-dashboard.png
 Calendar	attendance-calendar.png
 Manager Dashboard	admin-dashboard.png
