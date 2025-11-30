@@ -8,7 +8,15 @@ const connectDB = async () => {
     process.exit(1);
   }
   try {
-    await mongoose.connect(uri, { serverSelectionTimeoutMS: 10000 });
+    const host = (() => {
+      try {
+        const m = String(uri).split('@')[1] || String(uri);
+        const h = m.split('/')[0];
+        return h;
+      } catch { return ''; }
+    })();
+    if (host) console.log(`Connecting to MongoDB host: ${host}`);
+    await mongoose.connect(uri, { serverSelectionTimeoutMS: 20000 });
     console.log('MongoDB Connected');
   } catch (err) {
     console.error('MongoDB connection failed:', err.message);

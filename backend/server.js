@@ -15,6 +15,16 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const mongoInfo = (() => {
+  const uri = process.env.MONGO_URI || '';
+  if (!uri) return 'MONGO_URI missing';
+  try {
+    const m = String(uri).split('@')[1] || String(uri);
+    const h = m.split('/')[0];
+    return h ? `MONGO_HOST=${h}` : 'MONGO_URI present';
+  } catch { return 'MONGO_URI present'; }
+})();
+console.log(mongoInfo);
 
 // Middleware
 app.use(cors());
