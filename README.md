@@ -258,6 +258,8 @@ Filters by department, employee name, and status
 
 📌 <img width="1876" height="994" alt="Image" src="https://github.com/user-attachments/assets/14b25b76-51c8-426c-ac79-50f50e5845e2" />
 
+<img width="1574" height="933" alt="Image" src="https://github.com/user-attachments/assets/b35b89fe-a32d-4b49-81af-d1f2a9e51277" />
+
 🔍 Overview
 
 The Team Calendar View provides managers with a bird’s-eye visualization of attendance patterns across the entire organization. Instead of viewing records one employee at a time, managers can instantly understand daily team presence, absences, trends, and anomalies.
