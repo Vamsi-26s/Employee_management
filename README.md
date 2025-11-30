@@ -174,19 +174,107 @@ Folder location suggestion:
 
 /docs/screenshots/
 
-Screen	File Suggested
-Login	
-<img width="968" height="794" alt="Image" src="https://github.com/user-attachments/assets/10263770-37e2-4b3a-8536-53a7b9773956" />
+📸 Application Screenshots
 
-Employee Dashboard	
-<img width="1884" height="980" alt="Image" src="https://github.com/user-attachments/assets/dcb2e9dc-d699-4a53-93bc-62847316f984" />
+Below are highlights of the live Employee Attendance Management System showcasing major features and views from both Employee and Manager roles.
 
-Employer Attendance
+🔐 1️⃣ Login Page
+<img width="968" height="794" alt="Login Page" src="https://github.com/user-attachments/assets/10263770-37e2-4b3a-8536-53a7b9773956" />
 
-Manager Dashboard	admin-dashboard.png
-CSV Export	export-page.png
-Profile	profile-page.png
+Purpose:
+Users authenticate to access features based on their assigned role.
 
+Key Features:
+
+Email & password authentication
+
+Validation and error handling
+
+Password security with bcrypt + JWT
+
+Redirects users to Employee or Manager dashboard automatically based on role
+
+🧑‍💼 2️⃣ Employee Dashboard
+<img width="1884" height="980" alt="Employee Dashboard" src="https://github.com/user-attachments/assets/dcb2e9dc-d699-4a53-93bc-62847316f984" />
+
+Purpose:
+Displays the employee’s current attendance status and recent statistics.
+
+Highlights & UI Elements:
+
+Summary Cards: Present, Absent, Late, and Worked Hours
+
+"Quick Check In / Check Out" interactive button
+
+Weekly attendance insight chart
+
+Responsive layout with animations and icons
+
+🕒 3️⃣ Employee Attendance — Calendar View
+<img width="1901" height="933" alt="Employee Attendance Calendar" src="https://github.com/user-attachments/assets/a2754883-b39d-4f67-aa82-c6a162ab7225" /> <img width="1523" height="880" alt="Attendance Table View" src="https://github.com/user-attachments/assets/e0724439-4c6a-4e38-a12a-980f82d8d072" />
+
+Description:
+Employees can view their full attendance history in Calendar View and Table Format.
+
+Visual Enhancements:
+
+Status	Color	Meaning
+🟩 Green	Present	Employee successfully checked in
+🔴 Red	Absent	Marked or auto detected as absent
+🟡 Yellow	Late	Check-in recorded past allowed time
+🟧 Orange	Half-Day	Worked below time threshold
+🧑‍💻 4️⃣ Employee Profile
+
+📌 
+
+Features:
+
+Update profile information: name, department, employee ID
+
+Upload and update profile picture
+
+Toggle dark/light mode preferences
+
+👑 5️⃣ Manager Dashboard
+
+📌 (Screenshot placeholder — admin-dashboard.png)
+
+Purpose:
+Central hub for organization-wide attendance monitoring and analytics.
+
+Key Features:
+
+Total employee count
+
+Present vs Absent statistics
+
+Late arrival summaries
+
+Attendance trend graph
+
+Filters by department, employee name, and status
+
+📄 6️⃣ CSV Export Page
+
+📌 (Screenshot placeholder — export-page.png)
+
+Purpose:
+Allows managers to export attendance records for payroll, compliance, or audits.
+
+Supports:
+
+Date range selection
+
+Optional per-employee export
+
+Download in .csv format
+
+👤 7️⃣ Manager Profile & Settings
+
+📌 (Screenshot placeholder — profile-page.png)
+
+Purpose:
+Allows managers to update personal information and preferences.
 Add in README as:
 
 ![Employee Dashboard](docs/screenshots/employee-dashboard.png)
